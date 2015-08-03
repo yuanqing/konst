@@ -1,6 +1,6 @@
 'use strict';
 
-var konst = function(constants) {
+module.exports = function(constants) {
   var result = {};
   var i = -1;
   var len = constants.length;
@@ -11,5 +11,3 @@ var konst = function(constants) {
   }
   return result;
 };
-
-module.exports = konst;
