@@ -16,3 +16,13 @@ test('non-empty array', function(t) {
     BAZ: 'BAZ'
   });
 });
+
+test('argument slice', function(t) {
+  t.plan(1);
+
+  t.looseEqual(konst('FOO', 'BAR', 'BAZ'), {
+    FOO: 'FOO',
+    BAR: 'BAR',
+    BAZ: 'BAZ'
+  });
+});
