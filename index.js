@@ -1,8 +1,8 @@
 'use strict';
 
-function isArray(object) {
+var isArray = Array.isArray || function(object) {
   return Object.prototype.toString.call(object) === '[object Array]';
-}
+};
 
 module.exports = function(constants) {
   if (!isArray(constants)) {
