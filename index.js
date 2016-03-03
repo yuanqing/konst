@@ -5,7 +5,7 @@ function isArray(object) {
 }
 
 module.exports = function(constants) {
-  if (! isArray(constants)) {
+  if (!isArray(constants)) {
     constants = arguments;
   }
   var result = {};
